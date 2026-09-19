@@ -10,7 +10,7 @@ public class PropertyOwnerService {
 
     private final PropertyOwnerRepository propertyOwnerRepository;
 
-    PropertyOwnerService(PropertyOwnerRepository propertyOwnerRepository){
+    public PropertyOwnerService(PropertyOwnerRepository propertyOwnerRepository){
         this.propertyOwnerRepository = propertyOwnerRepository;
     }
 
