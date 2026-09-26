@@ -1,7 +1,7 @@
 package app.service;
 
 import app.domain.PropertyOwner;
-import app.repository.PropertyOwnerRepository;
+import app.repository.PropertyOwnerRepositoryImpl;
 import app.service.inputport.PropertyOwnerService;
 
 import java.util.Date;
@@ -10,9 +10,9 @@ import java.util.List;
 public class PropertyOwnerServiceImpl implements PropertyOwnerService {
 
 
-    private final PropertyOwnerRepository propertyOwnerRepository;
+    private final PropertyOwnerRepositoryImpl propertyOwnerRepository;
 
-    PropertyOwnerServiceImpl(PropertyOwnerRepository propertyOwnerRepository){
+    PropertyOwnerServiceImpl(PropertyOwnerRepositoryImpl propertyOwnerRepository){
         this.propertyOwnerRepository = propertyOwnerRepository;
     }
 
